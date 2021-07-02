@@ -22,7 +22,7 @@
 - Delete user and artist profile
 ### Project Made By:
 
-CE017 - Princy Bhalu (https://github.com/)
+CE017 - Princy Bhalu (https://github.com/princybhalu)
 
 CE102 - Parangi Rathod (https://github.com/Parangi-27)
 
