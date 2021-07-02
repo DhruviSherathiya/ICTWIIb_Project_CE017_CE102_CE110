@@ -5,7 +5,9 @@
 ### Language Used      : HTML, CSS, JavaScript, PHP
 
 ### Database Used      : MySQL
-![picture](img/Introduction.png)
+
+<img src="img/Introduction.png" width="1200" height="400">
+
 ## Project Functionalities:
 ### 1. USER
 - Listen Songs
