@@ -1,9 +1,12 @@
 # ICTWIIb_Project_CE017_CE102_CE110
-Keep Your Beat
+#Keep Your Beat
 
 Project Definition : Online Music Site 
+
 Language Used      : HTML, CSS, JavaScript, PHP
+
 Database Used      : MySQL
+
 
 Project Functionalities:
 1. USER
