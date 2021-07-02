@@ -19,3 +19,5 @@ CE017 - Princy Bhalu (https://github.com/)
 CE102 - Parangi Rathod (https://github.com/)
 
 CE110 - Dhruvi Sherathiya (https://github.com/DhruviSherathiya/)
+
+## Project Explanation Video Link
