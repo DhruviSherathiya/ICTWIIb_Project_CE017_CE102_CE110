@@ -5,7 +5,7 @@
 ### Language Used      : HTML, CSS, JavaScript, PHP
 
 ### Database Used      : MySQL
-
+![picture](img/Introduction.png)
 ## Project Functionalities:
 ### 1. USER
 - Listen Songs
