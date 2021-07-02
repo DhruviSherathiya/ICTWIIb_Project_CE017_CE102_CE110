@@ -6,7 +6,6 @@
 
 ### Database Used      : MySQL
 
-
 ## Project Functionalities:
 ### 1. USER
 - Listen Songs
