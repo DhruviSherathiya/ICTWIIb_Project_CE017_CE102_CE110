@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>
+            Paagal
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>   <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="paagal.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Paagal </h2>
+               &ensp; Artists :  Badshah <br>
+               &ensp; Album : Paagal <br>
+               &ensp; Relesed : 2019
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="paagal.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            Teri mummy ki jai
+            Kya cheez banayi
+            Doodh pe jaise aayi ho malai
+            Chitti chitti bang bang<span id="dots">...</span><span id="more">
+                Chitti kalayi teri
+                Aag laga de jaisi diyasalayi
+                Main international
+                Par gaana mera local
+                Tu hai sexy baaki hain so so
+                Main tera kaka tu meri coco
+                
+                Garmi kitni tujhmein
+                Roti khaati tu kis aate ki
+                
+                Hath lagao dekhe aise jaise kaategi
+                Yeh ladki paagal hai, paagal hai
+                Paagal hai, paagal hai x (4)
+                
+                Dekh ke tujhko aaye paseena
+                Shakal hai Indian body Latina
+                Chikni chameli Kat Katrina
+                Sach bola tha Shahrukh ishq kameena
+                Toone yoon to kiya barbaad hai
+                Tu ik number baaki tere baad hai
+                
+                Teacher ke lecture yaad hon na hon
+                Tujhe Badshah ke gaane saare yaad hain
+                Rehan de bete
+                
+                
+                
+                Rehan de tere hath na aane wali hai
+                Gaal gulaabi nain sharabi
+                Munh pe gaali hai
+                Yeh ladki paagal hai, paagal hai
+                Paagal hai, paagal hai x (4)
+                
+                Lage single
+                She want a boyfriend
+                She is a bad girl
+                She got bad friends
+                She got one life
+                She is livin’ it up
+                She don’t she don’t give a fu x (2)
+                
+                It’s your boy Badshah!
+                
+                Paagal hai, paagal hai
+                Go Loco
+                Paagal hai, paagal hai
+                Go Crazy
+                My baby
+                Paagal hai, paagal hai
+                He he he</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="maskhari.html" ><input type="image" src="maskhari.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="aao kabhi haveli pe.html" ><input type="image" src="aao kabhi haveli pe.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="dna-mein-dance.html" ><input type="image" src="dna-mein-dance.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="maskhari.html">Maskhari</a></center></td><td><center><a href="aao kabhi haveli pe.html">Aao Kabhi Haveli Pe</a></center></td><td><center><a href="dna mein dance.html">DNA Mein Dance</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>
+                Maskhari
+        </title>
+        <link rel="icon" href="http://localhost/lab7.2/img/logo/logo45.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>  <center><h1 id="myHeader"><img src="http://localhost/lab7.2/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="maskhari.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Maskhari </h2>
+               &ensp; Artists :   Hriday Gattani, A. R. Rahman, Sunidhi Chauhan<br>
+               &ensp; Movie :  Dil Bechara <br>
+               &ensp; Relesed : 2020
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="maskhri.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            Kar band sabhi ghadiyan
+            Aur mood bana badhiyan
+            Mukhde pe jala le tu
+            Muskaan ki phuljhadiyan<span id="dots">...</span><span id="more">
+            
+                Karle maskhari, thodi maskhari
+                Achcha khasa kaam maskhari
+                Phokat mein badnaam maskhari
+                Dil ko de aaram maskhari
+                
+                PauseUnmute
+                Loaded: 7.49%
+                Fullscreen
+                
+                
+                Peeda haari balm maskhari
+                Halki fulki si maskhari
+                Thandi kulfi si maskhari
+                Ho maskhari
+                Ho maskhari
+                Ho maskhari maskhari
+                
+                Jeene ki wajah maskhari
+                Thodi be-wajah maskhari
+                
+                
+                Karke to dekh maskhari
+                Deti hai maza maskhari
+                
+                Thodi si naram maskhari
+                Thodi si garam maskhari
+                Thodi si haya maskhari
+                Thodi besharam maskhari
+                
+                Dariya se pakad machhli
+                Baadal se chhuda bijli
+                Dil mein jo bhari tere
+                Har aaj mita khujli
+                
+                
+                
+                Karle maskhari, thodi maskhari
+                Achcha khasa kaam maskhari
+                Phokat mein badnaam maskhari
+                Dil ko de aaram maskhari
+                Peeda haari balm maskhari
+                
+                Achcha khasa kaam maskhari
+                Phokat mein badnaam maskhari
+                Dil ko de aaram maskhari
+                Peeda haari balm maskhari</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="aao kabhi haveli pe.html" ><input type="image" src="aao kabhi haveli pe.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="dna-mein-dance.html" ><input type="image" src="dna-mein-dance.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="the-disco-song.html" ><input type="image" src="the-disco-song.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="aao kabhi haveli pe.html">Aao Kabhi Haveli Pe</a></center></td><td><center><a href="dna-mein-dance.html">DNA Mein Dance</a></center></td><td><center><a href="the-disco-song.html">The Disco Song</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

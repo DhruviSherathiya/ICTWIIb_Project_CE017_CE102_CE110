@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>
+            The Disco Song
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>   <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="the-disco-song.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; The Disco Song </h2>
+               &ensp; Artists : Nazia Hassan, Sunidhi Chauhan, Benny Dayal<br>
+               &ensp; Movie : Student Of The Year <br>
+              &ensp; Relesed : 2012
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="the-disco-song.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            There’s something about tonight
+            Something very special
+            Something about the way you move that thing
+            Something very special<span id="dots">...</span><span id="more">
+                Something about the way you lookin’ at me
+                Something very special yeah
+                Something about tonight
+                Something very special (x2)
+                
+                Here we go..
+                Saari ki saari duniya bhula ke
+                Main tto tere naal nachna
+                Baby you’re so sexy!
+                
+                Boy you could be my one and only
+                Main toh tere naal nachna
+                Then I see you lookin’ on me
+                Aaja baat kar le dil ki
+                Hone lagenge afsaane
+                
+                You know it so sing it
+                Now do your hands up and say
+                Disco Deewane
+                Aahaan ahaan
+                Ho Disco deewane
+                Aahaan ahaan
+                Ho nasheelee hai raat
+                Ho Haathon mein haath
+                Naachein-gaayein saath
+                Disco Deewane
+                Aahaan.. ahaan
+                
+                There’s something about tonight
+                Something very special
+                Something about the way you move that thing
+                Something very special
+                Something about the way you lookin’ at me
+                Something very special yeah
+                Something about tonight
+                Something very special
+                
+                Ho hai naa mujh pe nazar teri
+                Aankhon hi aankhon mein baatein hoti hain
+                Aaja baahon mein aa meri
+                Aisi hi to raatein shuru hoti hain
+                Kabhi pal do pal mein yun fussy-fussy baatein hoti hai
+                Do hi mulaqaton mein mill jaate hain zamaane
+                Disco deewane
+                
+                You know it so sing it
+                Now go your hands up and say
+                Disco Diwane
+                Aahaan ahaan
+                Ho Disco diwane
+                Aahaan ahaan
+                Ho nasheelee hai raat
+                Ho Haathon mein haath
+                Naache gaayein saath
+                Disco Deewane
+                Aahaan.. ahaan
+                
+                Khel jaa raaton ka khel ye thodi der
+                Jhoom jaa baahon mein tu aake ab thodi der
+                Nazron mein hi (ahaan) tujhko samjha dunga (aahaan)
+                Raat baaqi hai saari hosh uda de bas thodi der
+                
+                Dance like a deewaana tonight
+                Move like a mastana tonight
+                Party like a parwana tonight
+                Jo kehna hai keh de
+                Dddd D I S C O
+                When everybody knows where we wanna go
+                Hote-hote hote hain mil jaate hain bahaane
+                
+                You know it so sing it
+                Now go your hands up and say
+                Disco Diwane
+                Aahaan ahaan
+                Ho Disco diwane
+                Aahaan ahaan
+                Ho nasheelee hai raat
+                Ho Haathon mein haath
+                Naache gaayein saath
+                
+                Ishq wala love..
+                
+                Disco Deewane
+                Aahaan.. ahaan
+                
+                There’s something about tonight
+                Something very special
+                Something about the way you move that thing
+                Something very special
+                Something about the way you lookin’ at me
+                Something very special yeah
+                Something about tonight
+                Something very special</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="yaara teri yaari.html" ><input type="image" src="yaara teri yaari.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="ankhiyon se goli mare.html" ><input type="image" src="ankhiyon se goli maare.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="dheeme dheeme.html" ><input type="image" src="dheeme dheeme.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="yaara teri yaari.html">Yaara Teri Yaari</a></center></td><td><center><a href="ankhiyon se goli mare.html">Ankhiyon Se Goli Mare</a></center></td><td><center><a href="dheeme dheeme.html">Dheeme Dheeme</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

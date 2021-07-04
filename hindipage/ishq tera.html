@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>
+            Ishq Tera
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body> <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="ishq tera.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Ishq Tera </h2>
+               &ensp; Artists :  Guru Randhawa <br>
+               &ensp; Album :  Blockbuster Love Tracks <br>
+               &ensp; Relesed : 2020
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="ishq tera.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            Mainu pehli pehli vaar ho gaya
+            Haay pehla pehla pyar ho gaya
+            Dil tere bina lagda nahi
+            Dil hathon baahr ho gaya<span id="dots">...</span><span id="more">
+
+                Ishq tera ishq meinu soun na deve
+                Ishq tera ishq meinu roun na deve
+                Ishq tera ishq meinu soun na deve
+                Ishq tera ishq meinu roun na deve
+                
+                Jo jo tu bolengi main kar jaunga
+                Hasde hasde pyar de vich mar jaunga
+                Jo jo tu bolengi main kar jaunga
+                Hasde hasde pyar de vich mar jaunga
+                
+                Par pyar tera meinu kuch hon na deve
+                Ishq tera ishq meinu soun na deve
+                
+                Raatan nu uth uth ke taare ginde aan
+                Bin matlab beh ke tere laare ginnde aan
+                Raatan nu uth uth ke taare ginde aan
+                Bin matlab beh ke tere laare ginnde aan
+                
+                Pyar kise da naal eh houn na deve
+                Ishq tera ishq meinu soun na deve</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="naach meri rani.html" ><input type="image" src="naach meri rani.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="Baarish-Ki-Jaaye.html" ><input type="image" src="Baarish-Ki-Jaaye.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="Ek Tarfa.html" ><input type="image" src="Ek Tarfa.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="naach meri rani.html">Naach Meri Rani</a></center></td><td><center><a href="Baarish-Ki-Jaaye.html">Baarish Ki Jaaye</a></center></td><td><center><a href="Ek Tarfa.html">Ek Tarfa</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

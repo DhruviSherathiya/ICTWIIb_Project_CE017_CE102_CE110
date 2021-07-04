@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>
+            Aankhiyon Se Goli Maare 
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>   <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>   <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="ankhiyon se goli maare.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp;Aankhiyon Se Goli Maare </h2>
+               &ensp;Artists : Mika Singh, Tulsi Kumar<br>
+               &ensp; Movie :  Pati Patni Aur Woh <br>
+               &ensp; Relesed : 2019
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="ankhiyon se goli mare.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            Apne deewane ka
+            Apne deewane ka kar de bura haal
+            Ray jee ankhiyon se goli mare
+            Ankhiyon se goli mare<span id="dots">...</span><span id="more">
+
+                Ladaki kamal ray jee
+                Ankhiyon se goli mare
+                Ladaki kamal ray jee
+                Ankhiyon se goli mare
+                
+                
+                Apnay deewane ka
+                Apnay deewane ka kar de bura haal
+                Ray jee akhion sai goli mare
+                Akhion se goli mare
+                
+                
+                Ladaka kamal ray jee
+                Ankhiyon se goli mare
+                Ladaka kamal ray jee
+                Ankhiyon se goli mare
+                
+                
+                Kuch bal kha ke, kuch lehra ke
+                Hirni jaise chalti hai
+                Pal mai tola pal mai masha
+                Kitnae rang badalti hai
+                
+                
+                Kuch bal kha ke, kuch lehra ke
+                Hirni jaise chalti hai
+                Pal mai tola pal mai masha
+                Kitnae rang badalti hai
+                Jis ko chahe pagal kar day
+                Apnay husn ke jaado sai
+                Iske lambe lambe kale kale
+                Nagin se baal
+                Ray jee akhiyon se goli mare
+                Ladaki kamal re jee
+                Ankhiyon se goli mare
+                
+                
+                Apnay deewanae ka
+                Apnay deewane ka kar de bura haal
+                Ray jee akhiyon se goli mare
+                Ankhiyon se goli mare
+                
+                
+                Ladaka kamal ray jee
+                Akhiyon se goli mare
+                Ladaka kamal ray jee
+                Akhiyon se goli mare
+                
+                
+                Chori chori chup ke chup ke
+                Mai bhee tujh pai marti thee
+                Shaam savere dilbar jani
+                Pyar tujhee se karti thee
+                
+                
+                Chori chori chup ke chup ke
+                Mai bhee tujh pai marti thee
+                Shaam savare dilbar jani
+                Pyar tujhee se karti thee
+                Sach kehti hun yeh
+                Mera dil or kisi ko chahe na
+                Dekho dekho phas
+                Gayi main to bulbul
+                Phaika jo jaal re
+                Ankhiyon se goli mare
+                Ladaka kamal re
+                Akhiyon sai goli mare
+                
+                
+                Apne deewane ka
+                Apne deewane ka kar de bura haal
+                Ray jee akhiyon sai goli mare
+                
+                
+                Ladaki kamal ray jee
+                Ankhiyon se goli mare
+                Ladaka kamal ray jee
+                Ankhiyon se goli mare.</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn"style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="Doob Gaye.html" ><input type="image" src="Doob Gaye.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="Is Qadar.html" ><input type="image" src="Is Qadar.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="ishq tera.html" ><input type="image" src="ishq tera.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="Doob Gaye.html">Doob Gaye</a></center></td><td><center><a href="Is Qadar.html">Is Qadar</a></center></td><td><center><a href="ishq tera.html">Ishq Tera</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

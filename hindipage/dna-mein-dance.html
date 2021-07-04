@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>
+            DNA Mein Dance
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>  <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="dna-mein-dance.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; DNA Mein Dance </h2>
+               &ensp; Artists : Vishal & Shekhar <br>
+               &ensp; Album : DNA Mein Dance <br>
+               &ensp; Relesed : 2021
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="dna-mein-dance.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;"> &nbsp;  LYRICS</h2></center><center><pre>
+            Koyi roke bhi to kahan rukne wale hain
+            Hum aasmaan hain kahan jhukne wale hain
+            
+            Dil mein chhupe hain jo
+            Rang dikhayenge aye aye<span id="dots">...</span><span id="more">
+                Hain jeetne ki aadat
+                Hum jeet’te hi jayenge
+                
+                Seene mein thirakti saans ho
+                Miss na ab yeh chance ho
+                
+                
+                
+                
+                Chal nachein aise jaise
+                DNA mein dance ho
+                DNA mein dance
+                DNA mein dance
+                
+                Seene mein thirakti saans ho
+                Miss na ab yeh chance ho
+                Chal nachein aise jaise
+                DNA mein dance ho
+                
+                
+                
+                DNA mein dance
+                DNA mein dance
+                
+                Dil ke iraade halke nahi hain
+                Hum to khiladi do pal ke nahi hain
+                
+                Dil mein chhupe hain jo
+                Rang dikhayenge aye aye
+                Hain jeetne ki aadat
+                Hum jeet’te hi jayenge
+                
+                Seene mein thirakti saans ho
+                Miss na ab yeh chance ho
+                
+                
+                Chal nachein aise jaise
+                DNA mein dance ho
+                
+                DNA mein dance
+                DNA mein dance
+                DNA mein dance
+                DNA mein dance</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="the-disco-song.html" ><input type="image" src="the-disco-song.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="yaara teri yaari.html" ><input type="image" src="yaara teri yaari.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="dheeme dheeme.html" ><input type="image" src="dheeme dheeme.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="the-disco-song.html">The Disco Song</a></center></td><td><center><a href="yaara teri yaari.html">Yaara Teri Yaari</a></center></td><td><center><a href="dheeme dheeme.html">Dheeme Dheeme</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>
+            Aao Kabhi Haveli Pe
+        </title>
+        
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+             .sticky { position: fixed; top: 0; width: 100%; }
+  
+             .sticky + .content {padding-top: 6px; }
+             h1{ font-size: 40px; color: black; height: 110px; margin-top: 0px;  padding-top: 8px;}
+           
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body> 
+        <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+      <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="aao kabhi haveli pe.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Aao Kabhi Haveli Pe </h2>
+               &ensp; Artists :  Badshah, Nikhita Gandhi, Sachin Jigar<br>
+               &ensp; Movie : Stree <br>
+                &ensp; Relesed : 2018 
+               
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="aao kabhi haveli pe.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2 style="margin-left: 60px;">LYRICS</h2></center><center><pre>
+            Aao, aao na babe
+            Aao, aao o o… (x4)
+            
+            Bas yeh bata de
+            Kaahe dikhaye tantrum
+            Tu jo bole toh<span id="dots">...</span><span id="more" style="display: none;">
+                Tere pichhe Majnu ho jaaun
+                Kehne main aati
+                Hai humko thodi si sharam
+                But teri godi ka
+                Pillow bana ke so jaaun
+                
+                Ho kehte aaye hum to February se
+                Niklo kabhi darling Chanderi se
+                Tanik aao kabhi haveli pe…
+                
+                Oo ho! aaye haaye.. oho..
+                Aao kabhi haveli pe
+                Aaye haaye! aa gaya, aa gaya!
+                Aao kabhi haveli pe…
+                
+                Arey sote sote bhookh lagi
+                Kha le baby moongfali
+                Moongfali mein dana nahi
+                Kisi ko kuchh bhi batana nahi
+                Jo bolegi kar dunga
+                Par karna sab chupchaap hai
+                Dil wil tera churana nahi
+                Kyonki chori karna paap hai
+                Paap hai!
+                Tera yaar sabhi ka baap hai!
+                
+                
+                Aaj raat ka dress code hai
+                Laal choli mein aankh micholi
+                Bann jaaun main Anushka
+                Aur tu ban jaaye Kohli
+                Par lagna tu lit AF tu
+                Bann thann aaja ASAP tu
+                
+                Dolo akele nahi
+                Tum yaar dost ke saath padharo
+                I got my sakhiyaan
+                Hai plan haazaron tum raat sanwaro
+                Par lagna tu lit AF tu
+                Bann thann aaja ASAP tu
+                
+                Setting hai seedhi teri saheli se
+                Jhumka mangwaya humne Bareilly se
+                Tanik aao kabhi haveli pe
+                
+                Aa gaya.. dekho na aa gaya
+                Aa gaya.. dekho na
+                Aao kabhi haveli pe
+                Aa gayaa.. dekho na aa gaya
+                Aa gayaa.. dekho na..
+                Aao kabhi haveli pe
+                
+                Aao, aao na babe aao, aao o o…
+                Aao, aao na babe aao, aao o o…
+                Oye hoye! (Aa gaya)
+                Aao, aao na babe aao, aao o o…
+                (Aa gaya)
+                Aao, aao na babe aao, aao o o</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn" style="margin-left: 60px;">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="dna-mein-dance.html" ><input type="image" src="dna-mein-dance.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="the-disco-song.html" ><input type="image" src="the-disco-song.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="yaara teri yaari.html" ><input type="image" src="yaara teri yaari.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="dna-mein-dance.html">DNA Mein Dance</a></center></td><td><center><a href="the-disco-song.html">The Disco Song</a></center></td><td><center><a href="yaara teri yaari.html">Yaara Teri Yaari</a></center></td></tr></table><br>
+
+            
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+  <br>
+    <hr>
+    </body>  
+</html>
