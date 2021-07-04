@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>
+        girls like you
+        </title>
+        <link rel="icon" href="http://localhost/lab7.2/img/logo/logo45.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+        </style>
+
+    </head> <center><h1 id="myHeader"><img src="http://localhost/lab7.2/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+    <br>  <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="girls like you.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Girls Like You</h2>
+               &ensp; Artists : Maroon 5<br>
+               &ensp; Featured Artists : Cardi B <br> 
+               &ensp; Album : Red Pill Blues <br>
+                &ensp; Relesed : 2017
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="Girls Like You.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2> &nbsp;  LYRICS</h2></center><center><pre>
+Spent 24 hours, I need more hours with you
+You spent the weekend getting even, ooh
+We spent the late nights making things right between us
+But now it's all good, babe<span id="dots">...</span><span id="more">
+Roll that back wood, babe
+And play me close
+'Cause girls like you run 'round with guys like me
+'Til sun down when I come through
+I need a girl like you, yeah yeah
+Girls like you love fun and, yeah, me too
+What I want when I come through
+I need a girl like you, yeah yeah
+Yeah yeah yeah, yeah yeah yeah
+I need a girl like you, yeah yeah
+Yeah yeah yeah, yeah yeah yeah
+I need a girl like you
+I spent last night on the last flight to you (ey ya)
+Took a whole day up trying to get way up, ooh
+We spent the daylight trying to make things right between us
+But now it's all good, babe
+Roll that back wood, babe
+And play me close, yeah
+'Cause girls like you run 'round with guys like me
+'Til sun down when I come through
+I need a girl like you, yeah yeah
+Girls like you love fun and, yeah, me too
+What I want when I come through
+I need a girl like you, yeah yeah
+Yeah yeah yeah, yeah yeah yeah
+I need a girl like you, yeah yeah
+Yeah yeah yeah, yeah yeah yeah
+I need a girl like you, yeah yeah
+I need a girl like you, yeah yeah
+I need a girl like you
+Maybe it's 6:45
+Maybe I'm barely alive
+Maybe you've taken my shit for the last time, yeah
+Maybe I know that I'm drunk
+Maybe I know you're the one
+Maybe you thinking it's better if you drive
+Oh, 'cause girls like you run 'round with guys like me
+'Til sun down when I come through
+I need a girl like you, yeah
+'Cause girls like you run 'round with guys like me
+'Til sun down when I come through
+I need a girl like you, yeah yeah
+Girls like you love fun and, yeah, me too
+What I want when I come through
+I need a girl like you, yeah yeah
+Yeah yeah yeah, yeah yeah yeah
+I need a girl like you, yeah yeah
+Yeah yeah yeah, yeah yeah yeah
+I need a girl like you</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn">Read More</button></center>
+<br><hr>
+<center><h2>YOU MAY ALSO LIKE</h2></center>
+<center>
+    <table><tr>
+        <td><a href="baby.html" ><input type="image" src="baby.png"  width="150" height="150"/></a> &emsp;</td><td>
+        &emsp;<a href="nobody_s love.html" ><input type="image" src="nobody_s love.png"  width="150" height="150"/></a> &emsp; </td><td>
+        &emsp;<a href="peaches.html" ><input type="image" src="peaches.png"  width="150" height="150"/></a></td></tr><tr>
+        <td><center><a href="baby.html"> Baby</a></center></td><td><center><a href="nobody_s love.html">Nobody_s Love</a></center></td><td><center><a href="peaches.html">Peaches</a></center></td></tr></table><br>
+
+        <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+        </script><br>
+        <hr>
+        </body>  
+    </html>

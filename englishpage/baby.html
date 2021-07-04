@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>
+            baby 
+        </title>
+        <link rel="icon" href="http://localhost/lab7.2/img/logo/logo45.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+        </style>
+
+    </head>
+    <body>   <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="baby.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Baby</h2>
+               &ensp; Artists : Justin Bieber<br>
+               &ensp; Album : My World 2.0 <br>
+                &ensp; Relesed : 2010 <br>
+               &ensp; Genre : Pop 
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="memories.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2> &nbsp;  LYRICS</h2></center><center><pre>
+Ooh, ooh
+Across the ocean, across the sea
+Startin' to forget the way you look at me now
+Over the mountains, across the sky<span id="dots">...</span><span id="more">
+Need to see your face
+I need to look in your eyes
+Through the storm and through the clouds
+Bumps in the road and upside down now
+I know it's hard babe, to sleep at night
+Don't you worry
+'Cause everything's gonna be alright, ai-ai-ai-a'ight
+Be alright, ai-ai-ai-a'ight
+Through the sorrow
+And the fights
+Don't you worry
+'Cause everything's gonna be alright, ai-ai-ai-a'ight
+Be alright, ai-ai-ai-a'ight
+All alone, in my room
+Waiting for your phone call to come soon
+Anf for you, oh, I would walk a thousand miles
+To be in your arms, holding my heart
+Oh I
+Oh I
+I love you
+And everything's gonna be alright, ai-ai-ai-a'ight
+Be alright, ai-ai-ai-a'ight
+Through the long nights
+And the bright lights
+Don't you worry
+'Cause everything's gonna be alright, ai-ai-ai-a'ight
+Be alright, ai-ai-ai-a'ight
+You know that I care for you
+I'll always be there for you
+I promise I'll just stay right here, yeah
+I know that you want me to
+Baby, we can make it through, anything
+'Cause everything's gonna be alright, ai-a'ight
+Be alright, ai-a'ight
+Through the sorrow and the fights
+Don't you worry, 'cause everything's gonna be alright, ai-a'ight
+Be alright, ai-a'ight
+Through the sorrow and the fights
+Don't you worry, cause everything's gonna be alright </span></pre><button onclick="myFunction()" id="myBtn" class="myBtn">Read More</button></center>
+<br><hr>
+<center><h2>YOU MAY ALSO LIKE</h2></center>
+<center>
+    <table><tr>
+        <td><a href="peaches.html" ><input type="image" src="peaches.png"  width="150" height="150"/></a> &emsp;</td><td>
+        &emsp;<a href="on my way.html" ><input type="image" src="on my way.png"  width="150" height="150"/></a> &emsp; </td><td>
+        &emsp;<a href="runaway.html" ><input type="image" src="runaway.png"  width="150" height="150"/></a></td></tr><tr>
+        <td><center><a href="peaches.html"> Peaches</a></center></td><td><center><a href="on my way.html"> On My Way</a></center></td><td><center><a href="runaway.html"> Runaway</a></center></td></tr></table><br>
+
+        <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+        </script><br>
+        <hr>
+        </body>  
+    </html>

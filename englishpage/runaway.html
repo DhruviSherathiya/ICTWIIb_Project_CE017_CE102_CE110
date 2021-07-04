@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>
+        runaway
+        </title>
+        <link rel="icon" href="http://localhost/lab7.2/img/logo/logo45.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+        </style>
+
+    </head>
+    <body>  <center><h1 id="myHeader"><img src="http://localhost/lab7.2/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>    <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="runaway.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Runaway</h2>
+               &ensp; Artists : Aurora<br> 
+               &ensp; Album : Running With The Wovlves <br>
+                &ensp; Relesed : 2015 <br>
+                &ensp; Genre : Pop 
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="runaway.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2> &nbsp;  LYRICS</h2></center><center><pre>
+I was listenin' to the ocean
+I saw a face in the sand
+But when I picked it up
+Then it vanished away from my hands, down<span id="dots">...</span><span id="more">
+I had a dream I was seven
+Climbing my way in a tree
+I saw a piece of heaven
+Waiting impatient for me, down
+And I was runnin' far away
+Would I run off the world someday?
+Nobody knows
+Nobody knows, and
+I was dancing in the rain
+I felt alive and I can't complain
+But now take me home
+Take me home where I belong
+I can't take it anymore
+I was painting a picture
+The picture was a painting of you and
+For a moment I thought you were here
+But then again, it wasn't true, down
+And all this time I have been lyin'
+Oh, lyin' in secret to myself
+I've been putting sorrow on the
+Farthest place on my shelf
+La-di-da
+And I was runnin' far away
+Would I run off the world someday?
+Nobody knows
+Nobody knows, and
+I was dancing in the rain
+I felt alive and I can't complain
+But now take me home
+Take me home where I belong
+I got no other place to go
+Now take me home
+Take me home where I belong
+I got no other place to go
+Now take me home
+Take me home where I belong
+I can't take it anymore
+But I kept runnin'
+For a soft place to fall
+And I kept runnin'
+For a soft place to fall
+And I kept runnin'
+For a soft place to fall
+And I kept runnin'
+For a soft place to fall
+And I was runnin' far away
+Would I run off the world someday?
+But now take me home
+Take me home where I belong
+I got no other place to go
+Now take me home
+Take me home where I belong
+I got no other place to go
+Now take me home
+Home where I belong
+Oh, no, no
+Now take me home
+Home where I belong
+Ho, ho, ho
+Now take me home
+Home where I belong
+Oh, no, no
+Now take me home
+Home where I belong
+I can't take it anymore/span></pre><button onclick="myFunction()" id="myBtn" class="myBtn">Read More</button></center>
+<br><hr>
+<center><h2>YOU MAY ALSO LIKE</h2></center>
+<center>
+    <table><tr>
+        <td><a href="baby.html" ><input type="image" src="baby.png"  width="150" height="150"/></a> &emsp;</td><td>
+        &emsp;<a href="on my way.html" ><input type="image" src="on my way.png"  width="150" height="150"/></a> &emsp; </td><td>
+        &emsp;<a href="girls like you.html" ><input type="image" src="girls like you.png"  width="150" height="150"/></a></td></tr><tr>
+        <td><center><a href="baby.html">Baby</a></center></td><td><center><a href="on my way.html">On My Way</a></center></td><td><center><a href="girls like you.html">Girls Like You</a></center></td></tr></table><br>
+
+        <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+        </script><br>
+        <hr>
+        </body>  
+    </html>

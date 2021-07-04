@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            Alone
+        </title>
+        <link rel="icon" href="img/logo/logo45.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+            img:hover{ box-shadow: 0px 2px 5px 2px palevioletred;
+            }
+        </style>
+
+    </head>
+    <body>  
+      <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  
+        <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="alone.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Alone </h2>
+               &ensp; Artists : Alan Walker<br>
+               &ensp; Album : Alone <br>
+                &ensp; Relesed : 2016 <br>
+               &ensp; Genre : Dance / Electronic
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="alone.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2> &nbsp;  LYRICS</h2></center><center><pre>
+ Lost in your mind
+I wanna know
+ Am I losing my mind?
+ Never let me go<span id="dots">...</span><span id="more">
+  If this night is not forever
+ At least we are together
+  I know I'm not alone
+ I know I'm not alone
+Anywhere, whenever
+  Apart, but still together
+ I know I'm not alone
+ I know I'm not alone
+ I know I'm not alone
+ I know I'm not alone
+ Un-conscious mind
+ I'm wide awake
+ Wanna feel one last time
+Take my pain away
+ If this night is not forever
+ At least we are together
+ I know I'm not alone
+  I know I'm not alone
+Anywhere, whenever
+ Apart, but still together
+I know I'm not alone
+I know I'm not alone
+I know I'm not alone
+I know I'm not alone
+I'm not alone
+I'm not alone
+I'm not alone
+I know I'm not alone
+I'm not alone
+I'm not alone
+I'm not alone
+I know I'm not alone</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn">Read More</button></center>
+            <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="baby.html" ><input type="image" src="baby.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="girls like you.html" ><input type="image" src="girls like you.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="on my way.html" ><input type="image" src="on my way.png"  width="150" height="150"/></a></td><tr>   
+            <td><center><a href="baby.html"> Baby</a></center></td><td><center><a href="girls like you.html">Girls Like You</a></center></td><td><center><a href="on my way.html">On My Way</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>

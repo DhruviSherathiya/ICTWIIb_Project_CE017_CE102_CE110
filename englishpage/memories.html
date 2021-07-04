@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+            memories 
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+        </style>
+
+    </head>
+    <body>  <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>    <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="memories.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Memories</h2>
+               &ensp; Artists : Maroon 5<br>
+               &ensp; Album : Memories <br>
+                &ensp; Relesed : 2019 <br>
+               &ensp; Genre : Pop 
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="memories.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2> &nbsp;  LYRICS</h2></center><center><pre>
+Here's to the ones that we got 
+Cheers to the wish you were here, but you're not
+'Cause the drinks bring back all the memories
+Of everything we've been through<span id="dots">...</span><span id="more">
+Toast to the ones here today
+Toast to the ones that we lost on the way
+'Cause the drinks bring back all the memories
+And the memories bring back, memories bring back you
+There's a time that I remember, when I did not know no pain
+When I believed in forever, and everything would stay the same
+Now my heart feel like December when somebody say your name
+'Cause I can't reach out to call you, but I know I will one day, yeah
+Everybody hurts sometimes
+Everybody hurts someday, ayy ayy
+But everything gon' be alright
+Go and raise a glass and say, ayy
+Here's to the ones that we got
+Cheers to the wish you were here, but you're not
+'Cause the drinks bring back all the memories
+Of everything we've been through
+Toast to the ones here today
+Toast to the ones that we lost on the way
+'Cause the drinks bring back all the memories
+And the memories bring back, memories bring back you
+Doo doo, doo doo doo doo
+Doo doo doo doo, doo doo doo doo
+Doo doo doo doo, doo doo doo
+Memories bring back, memories bring back you
+There's a time that I remember when I never felt so lost
+When I felt all of the hatred was too powerful to stop (ooh, yeah)
+Now my heart feel like an ember and it's lighting up the dark
+I'll carry these torches for ya that you know I'll never drop, yeah
+Everybody hurts sometimes
+Everybody hurts someday, ayy ayy
+But everything gon' be alright
+Go and raise a glass and say, ayy
+Here's to the ones that we got (oh)
+Cheers to the wish you were here, but you're not
+'Cause the drinks bring back all the memories
+Of everything we've been through (no, no)
+Toast to the ones here today (ayy)
+Toast to the ones that we lost on the way
+'Cause the drinks bring back all the memories (ayy)
+And the memories bring back, memories bring back you
+Doo doo, doo doo doo doo
+Doo doo doo doo, doo doo doo doo
+Doo doo doo doo, doo doo doo
+Memories bring back, memories bring back you
+Doo doo, doo doo doo doo
+Doo doo doo doo, doo doo doo doo
+Doo doo doo doo, doo doo doo (ooh, yeah)
+Memories bring back, memories bring back you
+Yeah, yeah, yeah
+Yeah, yeah, yeah, yeah, yeah, doh, doh
+Memories bring back, memories bring back you </span></pre><button onclick="myFunction()" id="myBtn" class="myBtn">Read More</button></center>
+      <br><hr>
+      <center><h2>YOU MAY ALSO LIKE</h2></center>
+     <center>
+        <table><tr>
+            <td><a href="love me.html" ><input type="image" src="love me.png"  width="150" height="150"/></a> &emsp;</td><td>
+            &emsp;<a href="alone.html" ><input type="image" src="alone.png"  width="150" height="150"/></a> &emsp; </td><td>
+            &emsp;<a href="shape of you.html" ><input type="image" src="shape of you.png"  width="150" height="150"/></a></td></tr><tr>
+            <td><center><a href="love me.html">Love Me</a></center></td><td><center><a href="alone.html">Alone</a></center></td><td><center><a href="shape of you.html"> Shape Of You</a></center></td></tr></table><br>
+    
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script><br>
+    <hr>
+    </body>  
+</html>
+
+
+
+

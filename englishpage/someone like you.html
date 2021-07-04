@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>
+            Someone like you 
+        </title>
+        <link rel="icon" href="http://localhost/lab7.2/img/logo/logo45.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A{text-decoration: none; color: black;}
+        </style>
+
+    </head>
+    <body>  <center><h1 id="myHeader"><img src="http://localhost/lab7.2/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>  <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="someone like you.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Someone Like You</h2>
+               &ensp; Artists : Adele<br>
+               &ensp; Album : 21(Japanese Edition)<br>
+                &ensp; Relesed : 2011 <br>
+               &ensp; Genre : Pop 
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="Someone Like You.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2> &ensp; LYRICS</h2></center><center><pre>
+            I heard that you're settled down
+            That you found a girl and you're married now
+            I heard that your dreams came true
+            Guess she gave you things, I didn't give to you<span id="dots">...</span><span id="more">
+            Old friend, why are you so shy?
+            Ain't like you to hold back or hide from the light
+            I hate to turn up out of the blue, uninvited
+            But I couldn't stay away, I couldn't fight it
+            I had hoped you'd see my face
+            And that you'd be reminded that for me, it isn't over
+            Never mind, I'll find someone like you
+            I wish nothing but the best for you, too
+            "Don't forget me, " I beg
+            I remember you said
+            "Sometimes it lasts in love, but sometimes it hurts instead"
+            "Sometimes it lasts in love, but sometimes it hurts instead"
+            You know how the time flies
+            Only yesterday was the time of our lives
+            We were born and raised in a summer haze
+            Bound by the surprise of our glory days
+            I hate to turn up out of the blue, uninvited
+            But I couldn't stay away, I couldn't fight it
+            I had hoped you'd see my face
+            And that you'd be reminded that for me, it isn't over
+            Never mind, I'll find someone like you
+            I wish nothing but the best for you, too
+            "Don't forget me, " I begged
+            I remember you said
+            "Sometimes it lasts in love, but sometimes it hurts instead"
+            Nothing compares, no worries or cares
+            Regrets and mistakes, they're memories made
+            Who would have known how bittersweet this would taste?
+            Never mind, I'll find someone like you
+            I wish nothing but the best for you
+            "Don't forget me, " I beg
+            I remember you said
+            "Sometimes it lasts in love, but sometimes it hurts instead"
+            Never mind, I'll find someone like you
+            I wish nothing but the best for you, too
+            "Don't forget me, " I begged
+            I remember you said
+            "Sometimes it lasts in love, but sometimes it hurts instead"
+            "Sometimes it lasts in love, but sometimes it hurts instead"</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn">Read More</button></center>
+            <br><hr>
+            <center><h2>YOU MAY ALSO LIKE</h2></center>
+           <center><table><tr>
+            <td><a href="alone.html" ><input type="image" src="alone.png"  width="150" height="150"/></a> &emsp; </td> 
+             <td>&emsp;<a href="nobody_s love.html" ><input type="image" src="nobody_s love.png"  width="150" height="150"/></a></td></tr><tr>
+             <td><center><a href="alone.html" >Alone &emsp;</a></center></td><td><center><a href="">nobody_s Love</a></center></td></tr>
+             </table></center>
+
+             <script>
+                function myFunction() {
+                  var dots = document.getElementById("dots");
+                  var moreText = document.getElementById("more");
+                  var btnText = document.getElementById("myBtn");
+                
+                  if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+            </script><br>
+            <hr>
+            </body>  
+        </html>

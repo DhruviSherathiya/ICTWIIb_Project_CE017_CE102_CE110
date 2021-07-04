@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>
+        nobody_s love
+        </title>
+        <link rel="icon" href="http://localhost/KeepYourBeat/images/logo.png" type="image/png">
+        <style>
+            .container { display:flex;}
+            .lyrics { color:rgb(82, 81, 81); font-size: 20px;}
+            .lyrics h2 { font-size:50px; color: black;}
+            audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);}
+            audio { height: 100px; width:500px; }
+            #more {display: none;}
+            img { border-radius: 8px;}
+            A
+              {text-decoration: none; color: black;}
+        </style>
+
+    </head>
+    <body>   <center><h1 id="myHeader"><img src="http://localhost/KeepYourBeat/images/logo.png" height="85" width="85" > Keep Your Beat</h1></center>
+        <br>   <div class="container">
+            <div>
+                &nbsp;&ensp;&nbsp;<img src="nobody_s love.png" height="400" width="400" >
+            </div>
+            <div class="lyrics">
+                <h2> &nbsp; Nobody_s Love</h2>
+               &ensp; Artists : Maroon 5<br> 
+               &ensp; Album : Nobody's Love <br>
+                &ensp; Relesed : 2020 <br>
+                &ensp; Genre : Pop 
+               <br> <br>
+               <audio controls="controls" id="player" > 
+                <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div></div>
+                &ensp;
+                <source src="Nobody_s Love.mp3" type="audio/mpeg"> </audio>
+
+            </div>
+        </div><br>
+
+        <center><h2> &nbsp;  LYRICS</h2></center><center><pre>
+You can make a grown man cry
+If you ever said, "Goodbye"
+Never let you go, oh, why?
+(Never let you go, oh, why?)<span id="dots">...</span><span id="more">
+You can make a grown man cry
+If you ever left my side
+Never let you go, oh, why?
+(Never let you go, oh, why?)
+You're the only hand in my back pocket
+If you ever left, I'd go psychotic
+Heaven hear me cryin', cryin'
+(Ooh, ooh, ooh)
+Baby, you're the key to my heart locket
+If you ever left, never unlock it
+Lonely like an island, island
+(Ooh, ooh, ooh)
+If my love ain't your love
+It's never gonna be nobody's love
+Never gonna need nobody's love but yours (but yours)
+If my love ain't your love
+It's never gonna be nobody's love
+Never gonna need nobody's touch but yours
+(But yours)
+You can make a grown man cry
+If you ever said, "Goodbye"
+Never let you go, oh, why?
+(Never let you go, oh, why?)
+You can make a grown man cry
+If you ever left my side
+Never let you go, oh, why?
+(Never let you go, oh, why?)
+You're the only hand in my back pocket
+If you ever left, I'd go psychotic
+Heaven hear me cryin', cryin'
+(Ooh, ooh, ooh)
+Hit me like a drug, and I can't stop it
+Fit me like a glove, and I can't knock it
+I ain't even lyin', lyin'
+(Ooh, ooh, ooh)
+If my love ain't your love
+It's never gonna be nobody's love
+Never gonna need nobody's love but yours
+(Nobody's, but yours)
+If my love ain't your love
+It's never gonna be nobody's love
+Never gonna need nobody's touch but yours (but yours)
+If my love ain't your love, then it's nobody's
+Only yours, only yours, not just anybody
+And if you ever leave then I'm never gon' want nobody
+Nobody's love
+If my love ain't your love, then it's nobody's
+Only yours, only yours, not just anybody's
+And if you ever leave then I'm never gon' want nobody
+Nobody's love
+Nobody's love
+Oh, yeah
+If my love ain't your love
+It's never gonna be nobody's love
+Never gonna need nobody's love but yours
+(No, no, but yours)
+If my love ain't your love
+It's never gonna be nobody's love
+Never gonna need nobody's touch but yours
+(No, no, no, no)
+If my love ain't your love, then it's nobody's
+Only yours, only yours, not just anybody
+And if you ever leave then I'm never gon' want nobody
+Nobody's love
+If my love ain't your love, then it's nobody's
+Only yours, only yours, not just anybody's
+And if you ever leave then I'm never gon' want nobody
+Nobody's love</span></pre><button onclick="myFunction()" id="myBtn" class="myBtn">Read More</button></center>
+<br><hr>
+<center><h2>YOU MAY ALSO LIKE</h2></center>
+<center>
+    <table><tr>
+        <td><a href="memories.html" ><input type="image" src="memories.png"  width="150" height="150"/></a> &emsp;</td><td>
+        &emsp;<a href="someone like you.html" ><input type="image" src="someone like you.png"  width="150" height="150"/></a> &emsp; </td><td>
+        &emsp;<a href="shape of you.html" ><input type="image" src="shape of you.png"  width="150" height="150"/></a></td></tr><tr>
+        <td><center><a href="memories.html"> Memories</a></center></td><td><center><a href="someone like you.html">Someone Like You</a></center></td><td><center><a href="shape of you.html"> Shape Of You</a></center></td></tr></table><br>
+
+        <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+        </script><br>
+        <hr>
+        </body>  
+    </html>
